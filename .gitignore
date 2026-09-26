@@ -23,6 +23,10 @@ data/raw/
 data/processed/
 datasets/
 
+# Student Challenge Workspaces (Sandboxed interactive test environments)
+problems/**/workspace/
+**/workspace/
+
 # AI/ML Model Weights & Serialized Objects (Use Git LFS or HuggingFace / Drive)
 *.pt
 *.pth

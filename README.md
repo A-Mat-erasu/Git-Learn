@@ -55,11 +55,12 @@
   - [Never Commit Secrets: API Keys & `.env`](#never-commit-secrets-api-keys--env)
   - [Managing Jupyter Notebooks (`.ipynb`) in Git](#managing-jupyter-notebooks-ipynb-in-git)
   - [Ideal CSE / AIML Project Structure](#ideal-cse--aiml-project-structure)
-- [9. 🧪 Interactive Hands-on Labs](#9--interactive-hands-on-labs)
+- [9. 🧪 Interactive Hands-on Labs & Challenges](#9--interactive-hands-on-labs--challenges)
   - [Lab 1: Your First Local Repository & Snapshot](#lab-1-your-first-local-repository--snapshot)
   - [Lab 2: Connecting to GitHub & Pushing to the Cloud](#lab-2-connecting-to-github--pushing-to-the-cloud)
   - [Lab 3: Simulated Team Merge Conflict Drill](#lab-3-simulated-team-merge-conflict-drill)
   - [Lab 4: Building a Machine Learning Experiment Repo](#lab-4-building-a-machine-learning-experiment-repo)
+  - [🏆 Interactive Problem Challenge Suite (5 Sandboxed Dilemmas)](#-interactive-problem-challenge-suite)
 - [10. 🚨 Emergency Troubleshooting, FAQs & Cheatsheet](#10--emergency-troubleshooting-faqs--cheatsheet)
   - [Escape the Dreaded Vim Editor](#escape-the-dreaded-vim-editor)
   - [Fixing "Detached HEAD State"](#fixing-detached-head-state)
@@ -1004,6 +1005,20 @@ git merge bob-branch
    - Notice that `massive_dataset.csv`, `model_checkpoint.pt`, and `__pycache__` **do not even appear**!
    - Only `train.py` and `.gitignore` are tracked.
 4. Your repository remains lightweight, secure, and lightning fast.
+
+---
+
+### 🏆 Interactive Problem Challenge Suite
+
+Put your knowledge to the test with real repository failure drills! Each challenge includes an automated scenario generator (`setup.bat` / `setup.sh`) creating an isolated broken workspace, along with an instant solution verification script (`verify.bat` / `verify.sh`):
+
+1. [**Problem 01: The Detached Time Traveler**](./problems/01-detached-head) — Recover from an accidental detached time-travel state and restore all commit history.
+2. [**Problem 02: Accidental Staging of Secrets & Bloat**](./problems/02-accidental-staging-secrets) — Unstage confidential API keys and datasets without deleting local files and configure permanent ignore protection.
+3. [**Problem 03: The Interrupted Feature**](./problems/03-unfinished-work-stash) — Safely shelve uncommitted, broken code during an urgent branch switch and synchronize hotfixes cleanly.
+4. [**Problem 04: The Merge Conflict Showdown**](./problems/04-merge-conflict-showdown) — Resolve conflicting lines between teammate branches, eliminate conflict markers, and finalize the merge commit.
+5. [**Problem 05: Committed to the Wrong Branch**](./problems/05-committed-to-wrong-branch) — Relocate an experimental prototype commit from `main` onto `feature/biometric` and rewind `main` back to stable release.
+
+👉 **[Start the Challenges in the Problems Directory](./problems)**
 
 ---
 
