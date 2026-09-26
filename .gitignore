@@ -1,0 +1,145 @@
+# ==============================================================================
+# .gitignore for 1st Year CSE & AIML Students
+# ==============================================================================
+# Rule of thumb for Git:
+# 1. Track CODE and CONFIGURATION that you write.
+# 2. Never track GENERATED FILES (binaries, caches, logs).
+# 3. Never track SENSITIVE DATA (passwords, tokens, API keys).
+# 4. Never track GIGANTIC FILES (datasets, neural network weights).
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. AI, Machine Learning & Data Science Artifacts
+# ------------------------------------------------------------------------------
+# Large Datasets (Do NOT commit raw CSVs, Parquet files, or image dumps to Git)
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+data/raw/
+data/processed/
+datasets/
+
+# AI/ML Model Weights & Serialized Objects (Use Git LFS or HuggingFace / Drive)
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+*.ckpt
+*.tflite
+*.pkl
+*.pickle
+*.joblib
+*.model
+weights/
+checkpoints/
+models/saved/
+
+# Experiment Tracking & Loggers
+wandb/
+runs/
+mlruns/
+lightning_logs/
+tensorboard/
+*.log
+
+# Jupyter Notebook Checkpoints & Cache
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.virtual_documents/
+
+# ------------------------------------------------------------------------------
+# 2. Python Environments & Bytecode
+# ------------------------------------------------------------------------------
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments (NEVER push your virtual environment!)
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging builds
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ------------------------------------------------------------------------------
+# 3. C / C++ (Data Structures, Algorithms & Systems Programming)
+# ------------------------------------------------------------------------------
+# Compiled binaries and object files
+*.o
+*.obj
+*.exe
+*.out
+a.out
+*.app
+
+# Build outputs
+bin/
+build/
+obj/
+out/
+cmake-build-*/
+
+# ------------------------------------------------------------------------------
+# 4. Java (Object-Oriented Programming)
+# ------------------------------------------------------------------------------
+*.class
+*.jar
+*.war
+*.ear
+
+# ------------------------------------------------------------------------------
+# 5. Security & Sensitive Secrets (CRITICAL!)
+# ------------------------------------------------------------------------------
+# Never commit credentials or API keys (OpenAI, HuggingFace, Kaggle, AWS, etc.)
+.env
+.env.local
+.env.*.local
+*.env
+secrets.json
+credentials.json
+kaggle.json
+token.txt
+api_keys.py
+id_rsa*
+id_ed25519*
+
+# ------------------------------------------------------------------------------
+# 6. IDEs & Operating System Artifacts
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code & JetBrains
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
